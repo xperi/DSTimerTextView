@@ -14,3 +14,18 @@ To use DSTimerTextView as a stopwatch you need only 3 lines.
     timer.start();
     
 Now the timer will start counting from 60 to 0 ;)
+
+CallBack Listener
+
+
+    DSTimerTextView *timer = new DSTimerTextView(this, timeTv);
+    timer.setCountDownTime(10);
+    timer.start(new TimerOnChangeListener() {
+
+			@Override
+			public void onEndTimer() {
+				L.w("onEndTimer");
+
+			}
+		});
+		
