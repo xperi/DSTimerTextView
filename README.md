@@ -19,7 +19,7 @@ Use Listener
 
 
     DSTimerTextView *timer = new DSTimerTextView(this, timeTv);
-    timer.setCountDownTime(10);
+    timer.setCountDownTime(60);
     timer.start(new TimerOnChangeListener() {
 
 			@Override
