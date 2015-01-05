@@ -24,7 +24,6 @@ CallBack Listener
 
 			@Override
 			public void onEndTimer() {
-				L.w("onEndTimer");
 
 			}
 		});
